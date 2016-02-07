@@ -38,6 +38,6 @@ Build the database first to avoid connection issues
 
 Launch the app
 
-        docker-compose up
+    docker-compose up
 
 Browse your web-server on port `8065`.
