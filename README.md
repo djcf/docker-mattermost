@@ -1,6 +1,6 @@
 # Docker Mattermost
 
-Simple Docker image to run Mattermost with a Postgres database.
+Simple Docker image to run Mattermost with a Postgres database on arm. Suitable for deployment on Scaleway or a Rasberry Pi.
 
 This image does not include the database.
 

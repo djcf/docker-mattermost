@@ -1,13 +1,9 @@
 # Mattermost Dockerfile
-FROM ubuntu:14.04
+#FROM ubuntu:14.04
+FROM armhfbuild/debian
 
-RUN apt-get update -y
-RUN apt-get upgrade -y
-
-RUN apt-get install -y wget
-
-RUN wget https://github.com/mattermost/platform/releases/download/v1.4.0/mattermost.tar.gz
-RUN tar -xvzf mattermost.tar.gz
+ADD https://github.com/mattermost/platform/releases/download/v2.1.0-rc1/mattermost.tar.gz /mattermost.tar.gz
+RUN tar -xvzf /mattermost.tar.gz; rm -f /mattermost.tar.gz
 
 RUN mkdir -p /mattermost/data
 
